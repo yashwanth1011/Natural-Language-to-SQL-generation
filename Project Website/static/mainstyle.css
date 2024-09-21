@@ -1,0 +1,105 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #9471b9 0%, #d77b9f 100%);
+  }
+  /* body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  } */
+  
+  
+  
+  .navbar {
+    background: linear-gradient(to right, #62497e 0%, #81445b 100%);
+    color: #7018af;
+    padding: 8px 10px;
+    text-align: center;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-size-adjust: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 80px;
+  }
+  
+  .card {
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+  }
+
+  .card h2{
+    color: #fff;
+    text-shadow: 
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+ 
+  }
+  
+  .card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s linear;
+    border-radius: 40px;  
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .card-front {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card-back {
+    background:linear-gradient(to bottom,  #d27cc8,#71b4d3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    color: #333;
+  }
+  
+  .card:hover .card-front {
+    transform: rotateY(180deg);
+  }
+  
+  .card:hover .card-back {
+    transform: rotateY(0deg);
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #2d1fc7;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+ a{
+  color: #fff;
+ }
+
+  

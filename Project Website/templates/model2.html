@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model 2</title>
+    <style>
+        body {
+            background: linear-gradient(to right,#5c9fb1,#81a956);
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        form, .output-container {
+            background: rgba(255, 255, 255, 0.2); /* Light white background with transparency */
+            backdrop-filter: blur(10px); /* Blur effect for the glassmorphism */
+            padding: 20px;
+            margin: 30px auto;
+            width: 300px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for subtle contrast */
+        }
+
+        input[type="text"], input[type="submit"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #0056b3;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #003d7a;
+        }
+
+        a {
+            color: rgb(14, 14, 188);
+            text-decoration: none;
+        }
+        h1{
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Model Using LSTM</h1>
+    <a href="/main.html">Back to Login</a>
+    <form action="/predictLSTM" method="post">
+        <input type="text" name="inputText" placeholder="Enter the value">
+        <input type="submit" value="Submit">
+    </form>
+
+    <div class="output-container">
+        {% if data %}
+        <div>{{ data }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
+<div>{{ data }}</div>

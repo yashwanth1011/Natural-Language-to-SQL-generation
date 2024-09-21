@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team of Designers</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #be7b7b; /* Light grey background */
+    }
+
+    .header {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 40px; /* Adds space between the header and team photos */
+    }
+
+    .header h1 {
+        margin: 0;
+        color: #333;
+    }
+
+    .header p {
+        color: #666;
+    }
+
+    .team-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Ensures responsiveness by allowing items to wrap */
+    }
+
+    .team-member {
+        margin: 15px;
+        text-align: center;
+        flex: 0 1 300px; /* Flex item can grow and shrink but start at 300px */
+        background-color: #fff; /* White background for team members */
+        padding: 10px;
+        border-radius: 8px; /* Optional: adds rounded corners to the boxes */
+    }
+
+    .team-member img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px; /* Optional: adds rounded corners to images */
+    }
+
+    .team-member h3 {
+        margin-top: 8px;
+        color: #333;
+    }
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>WELCOME</h1>
+    <p>We are a team for the project Natural language to SQL</p>
+    <a href = "/main.html">Back to Login</a>
+</div>
+<div class="team-container">
+    <div class="team-member">
+        <img src="static/yashu.png" alt="Yashwant Chennu">
+        <h3>Yashwant Chennu</h3>
+    </div>
+    <div class="team-member">
+        <img src="static/lucky.png" alt="Lakshana Kundan">
+        <h3>Lakshana Kundan</h3>
+    </div>
+    <div class="team-member">
+        <img src="static/aman.png" alt="Amanulla Shaik">
+        <h3>Amanulla Shaik</h3>
+    </div>
+</div>
+</body>
+</html>
