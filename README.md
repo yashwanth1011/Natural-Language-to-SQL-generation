@@ -33,7 +33,7 @@ This project implements various deep learning models (Transformer, LSTM, and GRU
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/yashwanth1011/Natural-Language-to-SQL-generation.git
    cd Natural-Language-to-SQL-generation
    ```
 
